@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Darktide Mods</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg-main: #15141A;
+    --bg-accent: #1f1f21;
+    --text-main: #E3FC02;
+    --text-accent: #A1AF22;
+    --text-muted: #5B5B66;
+  }
+
+  body {
+    font-family: 'Oswald', 'Fjalla One', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+
+  h1, h2 {
+    font-family: 'Fjalla One', 'Oswald', sans-serif;
+    color: var(--text-accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    border-bottom: 2px solid var(--text-muted);
+    padding-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(227, 252, 2, 0.2);
+  }
+
+  h2 {
+    border-left: 4px solid var(--text-accent);
+    padding-left: 0.5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin: 0.4rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--text-accent);
+    text-shadow: 0 0 6px rgba(161, 175, 34, 0.5);
+  }
+
+  .note {
+    color: var(--text-muted);
+    font-size: 0.95em;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .centered {
+  text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.85em;
+    color: var(--text-muted);
+    border-top: 1px solid var(--text-muted);
+    padding-top: 1rem;
+  }
+
+  /* Optional section dividers */
+  section {
+    background: var(--bg-accent);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-top: 2rem;
+  }
+</style>
+</head>
+<body>
+  <h1>💾 Dave's Darktide Mod List</h1>
+
+  <p class="note">A curated collection of mods used in Warhammer 40k: Darktide.</p>
+
+  <h2>🌐 User Interface</h2>
+  <ul class="centered">
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/235">Show me real weapon stats</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/156">True Level - Show players true level (+xx)</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/380">Red Weapons at Home</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/181">Name It - Rename weapons and curios</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/447">Markers All-in-one - Reworked markers for stims and other lootables</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/152">Inventory Stats</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/460">Display Ping</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/252">Decode Helper</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/114">Dark Cache</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/10">Custom Hud</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/138">Reveal Blessings</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/111">Perspectives</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/14">Numeric UI</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/70">Killfeed Improvements</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/135">For The Emperor</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/19">Darktide Mod Loader - Enable / Disable Mods in game</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/235">Show me real weapon stats</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/25">Creature Spawner</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/298">Collectible Finder</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/246">Automatic Mod Ordering</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/21">Animation Events</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/8">Darktide Mod Framework</a></li>
+    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/22">Scoreboard</a></li>
+  </ul>
+
+  <footer>
+    <p>Last updated: October 2025 — Hosted on <a href="https://github.com/">GitHub Pages</a></p>
+  </footer>
+</body>
+</html>
