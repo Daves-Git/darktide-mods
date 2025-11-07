@@ -95,42 +95,95 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     margin-top: 2rem;
   }
+
+  /* Layout for section columns */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column by default */
+  gap: 2rem;
+}
+
+/* 2 columns on medium screens */
+@media (min-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3 columns on wide screens */
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Keep section styles tidy */
+section {
+  background: var(--bg-accent);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+  
 </style>
+  
 </head>
+  
+  
 <body>
   <h1>💾 Dave's Darktide Mod List</h1>
 
   <p class="note">A curated collection of mods used in Warhammer 40k: Darktide.</p>
 
-  <ul class="centered">
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/235">Show me real weapon stats</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/156">True Level - Show players true level (+xx)</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/380">Red Weapons at Home</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/181">Name It - Rename weapons and curios</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/447">Markers All-in-one - Reworked markers for stims and other lootables</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/152">Inventory Stats</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/460">Display Ping</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/252">Decode Helper</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/114">Dark Cache</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/10">Custom Hud</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/138">Reveal Blessings</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/111">Perspectives</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/14">Numeric UI</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/70">Killfeed Improvements</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/135">For The Emperor</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/19">Darktide Mod Loader - Enable / Disable Mods in game</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/235">Show me real weapon stats</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/25">Creature Spawner</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/298">Collectible Finder</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/246">Automatic Mod Ordering</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/21">Animation Events</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/8">Darktide Mod Framework</a></li>
-    <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/22">Scoreboard</a></li>
-  </ul>
+  <div class="grid-container">
+
+    <section>
+      <h2>Essentials & Mod Management</h2>
+      <ul class="centered">
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/8">Darktide Mod Framework</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/21">Animation Events</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/19">Darktide Mod Loader - Enable / Disable Mods in game</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/246">Automatic Mod Ordering</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/114">Dark Cache</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/22">Scoreboard</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/135">For The Emperor</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/25">Creature Spawner</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/298">Collectible Finder</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/252">Decode Helper</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>UI Improvements & Customisation</h2>
+      <ul class="centered">
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/10">Custom Hud</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/152">Inventory Stats</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/156">True Level - Show players true level (+xx)</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/447">Markers All-in-one - Reworked markers for stims and other lootables</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/460">Display Ping</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/111">Perspectives</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/14">Numeric UI</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/70">Killfeed Improvements</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2">Weapons and Items</h2>
+      <ul class="centered">
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/380">Red Weapons at Home</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/235">Show me real weapon stats</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/181">Name It - Rename weapons and curios</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/138">Reveal Blessings</a></li>
+        <li><a href="https://www.nexusmods.com/warhammer40kdarktide/mods/235">Show me real weapon stats</a></li>
+      </ul>
+    </section>
+
+  </div>
 
   <footer>
     <p>Last updated: October 2025 — Hosted on <a href="https://github.com/">GitHub Pages</a></p>
   </footer>
 </body>
 </html>
+
 
