@@ -7,15 +7,5 @@ Quickly download mod's that I like to use for Warhammer 40k: Darktide
 
 ---
 
-### 📂 Categories
-
-- **Browsers:** 
-- **Drivers:** 
-- **Programs** 
-- **Games:** 
-- **Files:** 
-- **Comm's:** 
-- **PC Utilities:** 
-- **Security:** 
-
 ---
+
